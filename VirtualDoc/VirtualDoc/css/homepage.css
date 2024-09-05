@@ -1,0 +1,235 @@
+body{
+	margin: 0;
+	padding: 0;
+}
+section{
+	background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),  url(../img/online-doctor.jpeg);
+	background-size: cover;
+	background-position: center;
+	font-family: sans-serif;
+	height:100vh;
+	transition: all .5s ease;
+}
+
+.sidebar{
+	position: fixed;
+	left: 0px;
+	width: 250px;
+	height: 100%;
+	background: black;
+	transition: all .5s ease;
+}
+.sidebar header{
+	font-size: 30px;
+	color: white;
+	text-align: center;
+	line-height: 70px;
+	background: #1c8adb;
+	user-select: none;
+
+}
+h5{
+	margin: 0;
+	padding: 0 0 40px;
+	text-align: center;
+	font-size: 32px;
+	color: #fff;	
+}
+
+.sidebar ul a{
+	display: block;
+	height: 100%;
+	width: 100%;
+	line-height: 65px;
+	font-size: 20px;
+	color: white;
+	padding-left: 30px;
+	box-sizing: border-box;
+	border-top: 1px solid rgba(255,255,255,.1);
+	border-bottom: 1px solid rgba(255,255,255,.1);
+	transition: .4s;
+}
+.sidebar ul li:hover a {
+	padding-left: 50px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	padding-right: 8px;
+	background: #1c8adb
+
+}
+.sidebar ul a i {
+	margin-right: 20px;
+
+}
+#check{
+	display: none;
+}
+label #btn,
+label #cancel{
+	position: absolute;
+	cursor: pointer;
+	background: #042331;
+	border-radius: 3px;
+}
+label #btn{
+	left: 40px;
+	top: 25px;
+	font-size: 35px;
+	color: white;
+	padding: 6px 12px;
+	transition: all .5s;
+}
+label #cancel{
+	z-index: 1111;
+	left: 8px;
+	top: 17px;
+	font-size: 30px;
+	color: #0a5275;
+	padding: 4px 9px;
+	transition: all .5s;
+}
+#check:checked ~.sidebar{
+	left: -250px;
+}/*
+#check:checked ~ label #btn{
+	left: 250px;
+	opacity: 0;
+	pointer-events: none;
+}*/
+#check:checked ~ label #cancel{
+	left: -195px;
+}
+#check:checked ~ section{
+	margin-left: -250px;
+}
+#check:checked ~ .loginbox{
+	left: 51%;
+}
+.loginbox{
+	width: 1200px;
+	height: 680px;
+	background: rgba(0,0,0,0.2);
+	color: #fff;
+	top: 53%;
+	left: 56%;
+	position: absolute;
+	transform: translate(-50%,-50%);
+	box-sizing: border-box;
+	padding: 70px 30px;
+}
+.loginimg{
+	width:100px;
+	height:100px;
+	border-radius: 50%;
+	position: relative;
+	top: 20px;
+	border-bottom: 5px;
+	left: calc(50% - 50px);
+}
+h1{
+	margin: 0;
+	padding: 0 0 40px;
+	text-align: center;
+	font-size: 39px;
+
+}
+.loginbox p{
+	margin: 0;
+	padding: 0;
+	font-weight: bold;
+
+}
+.loginbox input{
+	width: 100%;
+	margin-bottom: 20px;
+
+}
+
+.loginbox input[type="submit"]{
+	border: none;
+	outline: none;
+	height: 60px;
+	background: #1c8adb;
+	color: #fff;
+	font-size: 30px;
+	border-radius: 50px;
+}
+.loginbox input[type="submit"]:hover{
+	cursor: pointer;
+	background: #39dc79;
+	color: #000;
+}
+.loginbox a{
+	float: right;
+	text-decoration: none;
+	font-weight: none;
+	font-size: 20px;
+	color: #fff;
+}
+.loginbox a:hover{
+	color: #39dc79;
+	font-weight: bold;
+}
+.loginbox b{
+	text-decoration: none;
+	font-size: 20px;
+	font-weight: none;
+	color: #1c8adb;
+}
+h2{
+	text-align: center;
+	font-size: 22px;
+	color: white;
+}
+/*
+img{
+	height: 100%;
+	width:100%;
+}
+*/
+.row{
+	width: 1200px;
+	height: 400px;
+}
+.column {
+  float: left;
+  width: 30%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+	cursor: pointer;
+  border-spacing: 1 px;
+  height: 35vh;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;  
+}
+
+/*
+.container {
+  padding: 0 16px;
+}
+*/
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: #fff;
+  background-color: orangered;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: orange;
+  color: black;
+}
