@@ -1,0 +1,108 @@
+/* Styling the overall container */
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f5f5f5;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Navigation bar styling */
+  .nav {
+    background-color: #4CAF50;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Styling the avatar display area */
+  .home {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    text-align: center;
+  }
+  
+  /* Styling the avatar image */
+  .avatar img {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    margin: 20px 0;
+    border: 3px solid #4CAF50;
+  }
+  
+  /* Button group for sprite types */
+  .btns {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Styling individual buttons */
+  .btns button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Hover effect on buttons */
+  .btns button:hover {
+    background-color: #45a049;
+  }
+  
+  /* Styling the 'Next' and 'Download' buttons */
+  .generate {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  .generate button {
+    background-color: #008CBA;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Hover effect on 'Next' and 'Download' buttons */
+  .generate button:hover {
+    background-color: #005f73;
+  }
+  
+  /* Ensuring that the app is responsive */
+  @media (max-width: 768px) {
+    .avatar img {
+      width: 150px;
+      height: 150px;
+    }
+  
+    .btns {
+      flex-direction: column;
+    }
+  
+    .btns button {
+      width: 100%;
+      margin: 5px 0;
+    }
+  }
+  
